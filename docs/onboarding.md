@@ -18,12 +18,12 @@ For the alpha, we ask that you grant the following GitHub users `Read` access to
 Note:
 
 - Grants to Meltano engineers are for the purpose of troubleshooting and support during and after the onboarding process.
-- In the Cloud Beta stage, we will add support for granting access via the Meltano GitHub App.
+- In the Cloud Beta stage, we will be launching a new Meltano Cloud GitHub App. This will replace the `MetanoCloud` service account user above.
 - Support for granting Meltano Cloud repo access using a private access token will also be available in the near future. (Let us know if this is your preferred method.)
 
 ### Prereq #2: Creating a test or sandbox environment
 
-For onboarding and debugging purposes, we recommend that teams create a [Meltano Environment](https://docs.meltano.com/concepts/environments) named `'sandbox'` or `'staging'`, which can be used by Meltano Cloud to test that all jobs are working as expected.
+For onboarding and debugging purposes, we recommend that teams create a [Meltano Environment](https://docs.meltano.com/concepts/environments) named `'sandbox'`, which can be used by Meltano Cloud to test that all jobs are working as expected.
 
 For more information, please see our guide: [Creating a Sandbox Environment for Meltano Cloud](sandbox_environments.md)
 
@@ -51,9 +51,10 @@ To onboard your project, Meltano will need the following project information:
 1. For each project:
     1. Git repo information:
         1. Name of hosting provider (e.g. GitHub, GitLab, etc.)
-        1. Git Repo URL
+        1. Git repo URL
         1. Git branch name
-        1. The name of the [Meltano Environment](https://docs.meltano.com/concepts/environments) to use for onboarding and testing purposes. (Recommended environment name is `'sandbox'`.)
+        1. The name of the [Meltano Environment](https://docs.meltano.com/concepts/environments) to use for onboard and testing purposes.
+           - _Recommended environment name is `'sandbox'`. See prereqs above for more information._
     1. For each schedule you would like to run in Meltano Cloud:
         1. Schedule name
 1. Per authorized user:
