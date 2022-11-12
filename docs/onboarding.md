@@ -53,6 +53,7 @@ To onboard your project, Meltano will need the following project information:
         1. Name of hosting provider (e.g. GitHub, GitLab, etc.)
         1. Git Repo URL
         1. Git branch name
+        1. The name of the [Meltano Environment](https://docs.meltano.com/concepts/environments) to use for onboarding and testing purposes. (Recommended environment name is `'sandbox'`.)
     1. For each schedule you would like to run in Meltano Cloud:
         1. Schedule name
 1. Per authorized user:
@@ -64,7 +65,9 @@ To onboard your project, Meltano will need the following project information:
 
 ### Step 2: Encrypt and submit the `.env` file
 
-After receiving the above information, Meltano will provide instructions to encrypt and securely provide any sensitive config values that are required for your project to execute successfully.
+After receiving the above information, Meltano will register your project(s) and generate a new set of encryption and decryption keys specific to your organization. We will then provide you with your organization's public key along with instructions to encrypt your `.env` file and attach your encrypted file to your project.
+
+See the [security whitepaper](security.md) for more information on encryption algorithms.
 
 ### Step 3: Initial execution and debugging
 
