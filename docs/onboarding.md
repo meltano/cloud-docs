@@ -8,8 +8,8 @@ The onboarding process requires the below steps.
 
 For the alpha, we ask that you grant the following GitHub users `Read` access to the project repo:
 
-1. The Meltano service account:
-    1. `MeltyBot`
+1. The Meltano Cloud service account:
+    1. `@MeltanoCloud`
 1. Meltano engineers (for onboarding and troubleshooting support):
     1. `@WillDaSilva`
     1. `@magreenbaum`
