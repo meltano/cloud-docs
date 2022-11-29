@@ -31,6 +31,8 @@ For more information, please see our guide: [Creating a Sandbox Environment for 
 
 If your project does not yet have schedules defined - for instance, if you are running workloads via an external orchestrator - you'll want to create new schedules for use by Meltano Cloud.
 
+Schedules should be specified in UTC if providing a cron expression.
+
 ## Onboarding Steps
 
 ### Step 1: Submit Project Onboarding Information
