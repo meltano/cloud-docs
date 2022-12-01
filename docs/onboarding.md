@@ -72,6 +72,13 @@ After receiving the above information, Meltano will register your project(s) and
 
 The [kms-ext tool](https://github.com/meltano/kms-ext) is available to use for the encryption process.
 
+Ex:
+```
+pip install pipx
+pipx install git+https://github.com/meltano/kms-ext.git@main
+kms encrypt <kms_key_id> <pubkey_file_path> --dotenv-path <env_file_path> --output-path <secrets.yml_path>
+```
+
 See the [security whitepaper](security.md) for more information on encryption algorithms.
 
 ### Step 3: Initial execution and debugging
