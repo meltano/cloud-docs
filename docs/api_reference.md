@@ -2,14 +2,14 @@
 
 API usage and examples for features of Meltano Cloud.
 
-The API functionalities documented here may be adjusted post-alpha phase.
+The API functionalities documented here may be adjusted during the Meltano Cloud alpha, and will definitely be adjusted prior to the Meltano Cloud GA release.
 
 ## On-demand Job Runners
 
 On-demand job runners allow users to rerun or run at any point a scheduled job.
 
 During the onboarding process, you will receive the following information that you will need to invoke your scheduled jobs on-demand:
-- An API key 
+- An API key
 - A Meltano Runner Secret
 - Your Organization's Tenant Resource Key (Tenant ID)
 - Your Project's ID (if you have multiple projects, you will receive one for each)
@@ -22,8 +22,14 @@ You will need to pass them in as headers (`x-api-key` and `meltano-runner-secret
 
 ### CURL Example
 
-First set `API_KEY` and `MELTANO_RUNNER_SECRET` environment variables locally.
+Set environment variables locally:
+- `API_KEY`
+- `MELTANO_RUNNER_SECRET`
+- `TENANT_RESOURCE_KEY`
+- `PROJECT_ID`
+- `ENVIRONMENT_NAME`
+- `SCHEDULE_NAME`
 
 ```
-curl -X POST "https://cloud-runners.meltano.com/v1/<tenant_resource_key>/<project_id>/<meltano_environment_name>/<schedule_name>" -H "x-api-key": ${API_KEY}" -H "meltano-runner-secret: ${MELTANO_RUNNER_SECRET}"
+curl -X POST "https://cloud-runners.meltano.com/v1/${TENANT_RESOURCE_KEY}/${PROJECT_ID}/${ENVIRONMENT_NAME}/${SCHEDULE_NAME}" -H "x-api-key": ${API_KEY}" -H "meltano-runner-secret: ${MELTANO_RUNNER_SECRET}"
 ```
