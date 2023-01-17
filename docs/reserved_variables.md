@@ -19,3 +19,5 @@ andusesinglequotesaroundthewholething
 -----END OPENSSH PRIVATE KEY-----'
 SOME_OTHER_SECRET=1234asdf
 ```
+
+Then continue with encryption using the [kms-ext](https://github.com/meltano/kms-ext) utility.
