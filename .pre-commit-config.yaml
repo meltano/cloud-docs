@@ -1,0 +1,20 @@
+ci:
+  autofix_commit_msg: |
+    [pre-commit.ci] auto fixes from pre-commit.ci hooks
+    for more information, see https://pre-commit.ci
+  autofix_prs: true
+  autoupdate_commit_msg: 'chore: pre-commit autoupdate'
+  autoupdate_schedule: weekly
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+        # The `bumpversion` command fails to commit its own changes to
+        # `.bumpversion.cfg` because it leaves some trailing whitespace.
+        exclude: ^(.bumpversion.cfg)$
+      - id: end-of-file-fixer
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-case-conflict

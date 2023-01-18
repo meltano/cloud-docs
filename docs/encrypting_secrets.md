@@ -3,16 +3,16 @@
 > **Note**
 > Meltano Cloud is currently in Alpha. Features and implementation details may change between Alpha and GA.
 
-This document covers information on encrypting secrets in your Meltano `secrets.yml` file. 
+This document covers information on encrypting secrets in your Meltano `secrets.yml` file.
 
 ## Components for Encryption
 
 ### Public Key
 
-During the on-boarding process, Meltano will provide you with the Public Key of your public/private encryption key pair. 
+During the on-boarding process, Meltano will provide you with the Public Key of your public/private encryption key pair.
 For details on the encryption algorithms and other security related information, refer to https://github.com/meltano/cloud-docs/blob/main/docs/security.md.
 
-Save your public key somewhere for use during encryption. 
+Save your public key somewhere for use during encryption.
 
 ### Utility kms-ext
 
@@ -28,8 +28,8 @@ pipx install git+https://github.com/meltano/kms-ext.git@main
 Once installed, you should be able to run `kms --help` to see usage, options, and commands available.
 
 > **Note**
-> Since the private key of your encryption key never leaves our AWS servers, you are not able to decrypt your secrets once you have encrypted them. 
-> If you need to change or confirm your values, you will need to re-encrypt your .env file. 
+> Since the private key of your encryption key never leaves our AWS servers, you are not able to decrypt your secrets once you have encrypted them.
+> If you need to change or confirm your values, you will need to re-encrypt your .env file.
 > Each time encryption is performed, all contents in the .env file will update.
 
 ### Example
