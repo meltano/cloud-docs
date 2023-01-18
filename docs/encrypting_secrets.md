@@ -56,7 +56,7 @@ THESE_ARE_MY_SECRET_VARS=secret_contents
 DATABASE_CREDENTIALS=secret_database_credentials_here
 ```
 
-The output of your `secrets.yml` file will look something like this:
+The default output file, `secrets.yml`, will look similar to this:
 
 ```
 env:

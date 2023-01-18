@@ -6,7 +6,7 @@ There are specific environment variables that are reserved for certain use-cases
 
 `GIT_SSH_PRIVATE_KEY` is a reserved variable that should be set if you have private repository packages. 
 
-To encrypt, set the ssh private key env variable into your .env file as-is in the private key file with single quotes 
+To encrypt, set the ssh private key env variable into your `.env` file as-is in the private key file with single quotes 
 around them. 
 
 Example `.env` file to be encrypted:
