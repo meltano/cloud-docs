@@ -71,15 +71,9 @@ To onboard your project, Meltano will need the following project information:
 After receiving the above information, Meltano will register your project(s) and generate a new set of encryption and decryption keys specific to your organization. We will then provide you with your organization's public key along with instructions to encrypt your `.env` file and attach your encrypted file to your project.
 
 The [kms-ext tool](https://github.com/meltano/kms-ext) is available to use for the encryption process.
+See the [encrypting secrets docs](encrypting_secrets.md) for more details and examples of how to do this.
 
-Ex:
-```
-pip install pipx
-pipx install git+https://github.com/meltano/kms-ext.git@main
-kms encrypt <pubkey_file_path> --dotenv-path <env_file_path> --output-path <secrets.yml_path>
-```
-
-See the [security whitepaper](security.md) for more information on encryption algorithms.
+Also see the [security whitepaper](security.md) for more information on encryption algorithms.
 
 ### Step 3: Initial execution and debugging
 
