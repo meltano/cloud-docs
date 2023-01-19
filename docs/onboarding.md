@@ -72,6 +72,7 @@ After receiving the above information, Meltano will register your project(s) and
 
 The [kms-ext tool](https://github.com/meltano/kms-ext) is available to use for the encryption process.
 See the [encrypting secrets docs](encrypting_secrets.md) for more details and examples of how to do this.
+Also be aware that there are some [reserved variables](https://github.com/meltano/cloud-docs/blob/main/docs/reserved_variables.md) only for use by Meltano Cloud.
 
 Also see the [security whitepaper](security.md) for more information on encryption algorithms.
 
