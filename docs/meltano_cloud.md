@@ -8,7 +8,7 @@ Meltano Cloud currently runs on AWS.
 
 ## Region
 
-Meltano cloud's primary region today is in `us-west-2` Oregon.
+The primary AWS region hosting Meltano Cloud is `us-west-2` (Oregon, US).
 
 Future plans include expanding into an EU region (timing is TBD).
 
