@@ -69,3 +69,7 @@ env:
     ciphertext: 3A6IWdP4fZoiI+xjENaxGI3MSue6svKk5l3ecXCJt4+sbD5X9M2IcvN6sBooi9jjKyQf55ojhzSlC2Wzaaw/d4Y1Ulh2kH4lae1UHrpT+K5yvah3PqZ51xU+TZqV4+7pd2YGpoEpdNsw3C/ZfLg+tt2JjpK0nOXnbgVTLrcqqVQj7PpjNSXFXr2IJmULgybRgCBKmBoTJWcLasLVvhuTOqdU5ZCm0fp/RXRltlK3/pFE1YMOXrVOGbozNluoHS5b5JrdOGZuHZ+He56PmH3bh4d1pWmi970gI+BQ3GBkyLOxdYigK0d/z8mZCdsc0G93GRS35J3HSg2cHoACsXPvCxAFSwt73skBsNMKuRdplrBc0YSpld5lG9ccTISGKf1t0YtXlDYI5bT/jZH56DcU0Lyz54zBo+PjNEQN4nGOil3d/pjBSXi0UuDH3GWEIw7Tvb08N3GfYPMQd5rPVagVyQjrHwGBugMDQy1SEtlsTBXl76porBnurAcb0LCiGQv+Q1dJCMG+JM1PE+qLrj6cOANhDWj8lCsHD7Nyz5Q4wJehnznvHKobDwZ50bEde53grXCp5s4gLOmaG9JCa8pDUjlM7ppqEkZcERFjKfp2VVicJI9Skcd1NRB9yemJrtdUKlsD5OOawZER0piJCBfQewJmBBDvtU7K5lPSUWqshH8=
     scheme: RSAES_OAEP_SHA_256
 ```
+
+### Reserved Variables
+
+See the [reserved variables](https://github.com/meltano/cloud-docs/blob/main/docs/reserved_variables.md) docs for more details on variables that are reserved for use by Meltano Cloud.
