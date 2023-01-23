@@ -14,4 +14,11 @@ Future plans include expanding into an EU region (timing is TBD).
 
 ## IP Addresses
 
-In the near future, we will have an available list of IP addresses for allow-listing.
+We use the following IP addresses for all egress traffic.
+Add the following IPs to your allow list if your Meltano Cloud workload requires access to your protected servers.
+
+```
+54.68.17.185/32
+44.231.17.56/32
+44.225.129.236/32
+```
