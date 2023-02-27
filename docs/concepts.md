@@ -2,16 +2,18 @@
 
 ## Meltano Cloud Users
 
-Your Meltano Cloud user account is associated with a GitHub account for single-signon. If you do not have a GitHub account, you can create a free account at [github.com](https://github.com).
+Your Meltano Cloud user account is associated with a GitHub account for single-sign-on. If you do not have a GitHub account, you can create a free account at [github.com](https://github.com).
 
 > **Note**
-> During the Private and Public Beta, we will be collecting feedback from users regarding the overall login experience. We also plan to offer SAML as a premium feature for Enterprise users. If would have a use case to support alternate forms of login besides GitHub auth and SAML (e.g. GitLab, or user/password auth), please let your account manager know or log an issue in our [issue tracker](https://github.com/meltano/cloud-docs/issues).
+>
+> During the Private and Public Beta phases, we will be collecting feedback from users regarding the login and account creation experience overall. Post-GA, we plan to offer SAML as a premium feature for Enterprise users. If you have a use case to support alternate forms of login besides GitHub auth and SAML (e.g. GitLab, or user/password auth), please let your account manager know or log an issue in our [issue tracker](https://github.com/meltano/cloud-docs/issues).
 
 ## Meltano Cloud Organizations
 
 Your Meltano Cloud Organization is the top-level entity associated with your payment info. Each organization will be issued a unique billing account number.
 
 > **Note**
+>
 > Each Meltano Cloud Organization can be mapped to zero or more GitHub organizations. See [Meltano Project Groups](#meltano-project-groups-and-github-orgs) below for more information.
 
 ## Meltano Project Groups and "GitHub Orgs"
@@ -29,7 +31,8 @@ Within each Cloud Project, you can deploy zero or more named [Meltano Environmen
 Each Cloud Environment Deployment must specify the environment name to deploy and the git branch to use when tracking project updates.
 
 > **Note**
-> All compute operations require a deployed environment - including: job execution, EL pipelines, scheduled workloads, etc.
+>
+> All operations that perform compute require a deployed environment - including: ad-hoc job execution, EL pipelines, scheduled tasks, etc.
 
 ## Meltano Cloud Schedules
 
