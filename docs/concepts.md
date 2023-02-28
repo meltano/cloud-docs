@@ -14,11 +14,9 @@ Your Meltano Cloud Organization is the top-level entity associated with your pay
 
 > **Note**
 >
-> Each Meltano Cloud Organization can be mapped to zero or more GitHub organizations. See [Meltano Project Groups](#meltano-project-groups-and-github-orgs) below for more information.
-
-## Meltano Project Groups and "GitHub Orgs"
-
-Within each Meltano Cloud Organization, you can authorize Meltano Cloud to access your GitHub organizations. Internally, we refer to these as Meltano Cloud "project groups". Projects within a project group may share certain aspects, such as shared encryption/decryption keys and a shared set of role-based access permissions.
+> Meltano Cloud Organizations should not be confused with GitHub Organizations (or "GitHub Orgs"). Each Meltano Cloud Organization can include projects from multiple GitHub Orgs.
+>
+> Meltano Cloud users grant access to specific public and private repositories using the standard GitHub App authorization flow.
 
 ## Meltano Cloud Projects
 
@@ -36,6 +34,6 @@ Each Cloud Environment Deployment must specify the environment name to deploy an
 
 ## Meltano Cloud Schedules
 
-Schedules within Meltano Cloud map directly to schedules defined in `meltano.yml`. However, in Meltano Cloud, each schedule starts off disabled by default, and should be enabled and disabled on a per-environment basis.
+Schedules within Meltano Cloud map directly to schedules defined in `meltano.yml`. However, in Meltano Cloud, each schedule starts off disabled by default, and each schedule is enabled or disabled on a per-environment basis.
 
 For example: The Acme Data Project has a schedule named `daily-transforms` and two environments named `prod` and `staging` respectively. Upon onboarding to Meltano Cloud, the Acme team can choose to enable `daily-transforms` on the `prod` environment only. Alternatively, the Acme team can choose to enable the schedule for both environments or neither environment. Whenever changing the status on a schedule, the action to enable or disable the schedule is in the context of one specific [Deployed Environment](#meltano-cloud-environments-aka-deployments) and one specified schedule name.
