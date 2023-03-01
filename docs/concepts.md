@@ -6,7 +6,7 @@ Your Meltano Cloud user account is associated with a GitHub account for single-s
 
 > **Note**
 >
-> During the Private and Public Beta phases, we will be collecting feedback from users regarding the login and account creation experience overall. Post-GA, we plan to offer SAML as a premium feature for Enterprise users. If you have a use case to support alternate forms of login besides GitHub auth and SAML (e.g. GitLab, or user/password auth), please let your account manager know or log an issue in our [issue tracker](https://github.com/meltano/cloud-docs/issues).
+> During the Private and Public Beta phases, we will be collecting feedback from users regarding the login and account creation experience overall. Post-GA, we plan to offer SAML on Cloud. If you have a use case to support alternate forms of login besides GitHub auth and SAML (e.g. GitLab, or user/password auth), please let your account manager know or log an issue in our [issue tracker](https://github.com/meltano/cloud-docs/issues).
 
 ## Meltano Cloud Organizations
 
@@ -22,11 +22,11 @@ Your Meltano Cloud Organization is the top-level entity associated with your pay
 
 A "Cloud Project" is any Meltano project you have registered on Meltano Cloud. The project definition consists of a git repo and a relative project directory within the git repo.
 
-## Meltano Cloud Environments (aka "Deployments")
+## Meltano Cloud Deployments
 
-Within each Cloud Project, you can deploy zero or more named [Meltano Environments](https://docs.meltano.com/concepts/environments) to Meltano Cloud. Internally, we often refer to these as "deployments" since they are isolated environments deployed to the Cloud.
+Within each Cloud Project, you can deploy zero or more named [Meltano Environments](https://docs.meltano.com/concepts/environments) to Meltano Cloud. These are called Cloud Deployments.
 
-Each Cloud Environment Deployment must specify the environment name to deploy and the git branch to use when tracking project updates.
+Each Cloud Deployment must specify an environment name to deploy and a git branch to use when tracking project updates.
 
 > **Note**
 >
@@ -34,6 +34,5 @@ Each Cloud Environment Deployment must specify the environment name to deploy an
 
 ## Meltano Cloud Schedules
 
-Schedules within Meltano Cloud map directly to schedules defined in `meltano.yml`. However, in Meltano Cloud, each schedule starts off disabled by default, and each schedule is enabled or disabled on a per-environment basis.
-
-For example: The Acme Data Project has a schedule named `daily-transforms` and two environments named `prod` and `staging` respectively. Upon onboarding to Meltano Cloud, the Acme team can choose to enable `daily-transforms` on the `prod` environment only. Alternatively, the Acme team can choose to enable the schedule for both environments or neither environment. Whenever changing the status on a schedule, the action to enable or disable the schedule is in the context of one specific [Deployed Environment](#meltano-cloud-environments-aka-deployments) and one specified schedule name.
+Schedules within Meltano Cloud map directly to schedules defined in `meltano.yml`. However, in Meltano Cloud, each schedule starts off disabled by default, and each schedule is enabled or disabled on a per-Deployment basis.
+For example: The Acme Data Project has a schedule named `daily-transforms` and two environments named `prod` and `staging` respectively. Upon onboarding to Meltano Cloud, the Acme team can choose to enable `daily-transforms` on the `prod` environment only. Alternatively, the Acme team can choose to enable the schedule for both environments or neither environment. Whenever changing the status on a schedule, the action to enable or disable the schedule is in the context of one specific [Deployed Environment](#meltano-cloud-deployments) and one specified schedule name.
