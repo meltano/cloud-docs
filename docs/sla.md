@@ -1,3 +1,3 @@
-# Meltano Cloud Service Level Agreement (SLA)
+# Meltano Cloud Platform Service Level Agreement (SLA)
 
-Todo
+# Meltano Cloud Platinum Connector Service Level Agreement (SLA)
