@@ -6,7 +6,7 @@
 
 ## Connector Quality
 
-* **Platinum** - Platinum connectors are built on the Meltano SDK and are maintained, supported, and tested by Meltano or our Partners. Additional SLAs are available for these connectors in Meltano Cloud. Contact us to learn more. 
+* **Platinum** - Platinum connectors are built on the Meltano SDK and are maintained, supported, and tested by Meltano or our Partners. Additional SLAs are available for these connectors in Meltano Cloud. Contact us to learn more.
 * **Gold** - Gold connectors are built on the Meltano SDK, are actively used by many Meltano Cloud and open source users, and have broad coverage of data and features.
 * **Silver** - Silver connectors may be built on the Meltano SDK, but their open source and Meltano Cloud usage may be lower compared to a Gold connector.
 * **Bronze** - Bronze connectors are not based on the Meltano SDK. We have some usage data for this connector in Meltano Core or Cloud.
@@ -25,6 +25,6 @@
 
 <!-- Generated from https://www.tablesgenerator.com/markdown_tables -->
 
-For all connectors we may apply feedback we get from the community or our judgement to adjust the quality indicator of a connector. 
+For all connectors we may apply feedback we get from the community or our judgement to adjust the quality indicator of a connector.
 
-Please reach out to us to learn more about Platinum connectors. 
+Please reach out to us to learn more about Platinum connectors.
