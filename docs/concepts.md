@@ -32,6 +32,15 @@ Each Cloud Deployment must specify an environment name to deploy and a git branc
 >
 > All operations that perform compute require a deployed environment - including: ad-hoc job execution, EL pipelines, scheduled tasks, etc.
 
+## Meltano Cloud Runs
+
+A run within Meltano is an instance of a Meltano operation that performed some compute. If you execute any of the following CLI commands, that is considered a run:
+
+* invoke
+* elt
+* run
+* test
+
 ## Meltano Cloud Schedules
 
 Schedules within Meltano Cloud map directly to schedules defined in `meltano.yml`. However, in Meltano Cloud, each schedule starts off disabled by default, and each schedule is enabled or disabled on a per-Deployment basis.
