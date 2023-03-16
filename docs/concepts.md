@@ -18,9 +18,26 @@ Your Meltano Cloud Organization is the top-level entity associated with your pay
 >
 > Meltano Cloud users grant access to specific public and private repositories using the standard GitHub App authorization flow.
 
+### Internal Organization ID
+
+Meltano Cloud uses an internal alpha-numeric string (randomly generated) to uniquely identify your cloud organization's identify. This ID may occassionally be shared during Cloud debugging and you may find references to it in the internal workings of Meltano Cloud CLI.
+
+> **Warning**
+> The "Internal Organization ID" should not be considered a permanent identifier, and may change at any time without notice.
+
 ## Meltano Cloud Projects
 
 A "Cloud Project" is any Meltano project you have registered on Meltano Cloud. The project definition consists of a git repo and a relative project directory within the git repo.
+
+### Internal Project ID
+
+Meltano Cloud uses an internal alpha-numeric string (randomly generated) to uniquely identify your project's deployment. This ID may occassionally be shared during Cloud debugging and you may find references to it in the internal workings of Meltano Cloud CLI.
+
+> **Warning**
+> The "Internal Project ID" should not be confused with the Project ID that is defined within `meltano.yml`.
+
+> **Note**
+> The "Internal Project ID" should not be considered a permanent identifier, and may change at any time without notice.
 
 ## Meltano Cloud Deployments
 
@@ -31,6 +48,14 @@ Each Cloud Deployment must specify an environment name to deploy and a git branc
 > **Note**
 >
 > All operations that perform compute require a deployed environment - including: ad-hoc job execution, EL pipelines, scheduled tasks, etc.
+
+### Deployment Names
+
+Each deployment has a "Deployment Name", which defaults to the "Environment Name" for the Meltano Environment that was deployed.
+
+> **Note**
+>
+> At the current time, the Deployment Name will always be equivalent to the name of the environment that was deployed - and we do not yet support deploying the same environment twice as two different deployments. In future versions of Meltano, we plan to allow Environments to be deployed more than once (for example, for CI use cases), and for Deployment to be renamed.
 
 ## Meltano Cloud Schedules
 
