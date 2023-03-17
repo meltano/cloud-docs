@@ -32,14 +32,35 @@ Each Cloud Deployment must specify an environment name to deploy and a git branc
 >
 > All operations that perform compute require a deployed environment - including: ad-hoc job execution, EL pipelines, scheduled tasks, etc.
 
-## Meltano Cloud Runs
+## Meltano Cloud Jobs
 
-A run within Meltano is an instance of a Meltano operation that performed some compute. If you execute any of the following CLI commands, that is considered a run:
+A job within Meltano is an instance of a Meltano operation that performed some compute. If you execute any of the following CLI commands, that is considered a job:
 
 * invoke
 * elt
 * run
 * test
+
+Each job has additional adjectives that give more information about what kind of job it is. 
+
+### On-demand, Unnamed Jobs
+
+An unnamed job is one that is specified directly on the command line. If a user runs `invoke` or `test`, that is always an on-demand unnamed job. If a user runs `meltano run` or `meltano elt` and specifies each plugin on the command line, that is an unnamed job.
+
+### On-demand, Named Jobs
+
+A named job is defined in the meltano.yml file either under the `jobs` key in the case of `meltano run` or via the `schedules` key in the case of `meltano elt`. 
+
+On-demand, named jobs can be triggered via the following commands:
+
+* `meltano schedule run <schedule_name>` (this works for `meltano elt` or `meltano run`)
+* `meltano run <job_name>` (this works only for `meltano run`)
+
+### Scheduled Jobs
+
+Scheduled jobs are named jobs that have been set to run on an interval and have been triggered automatically according to that schedule. These are defined under the `schedules` key in the meltano.yml file. [Documentation here.](https://docs.meltano.com/concepts/project#schedules)
+
+All scheduled jobs are named jobs.
 
 ## Meltano Cloud Schedules
 
