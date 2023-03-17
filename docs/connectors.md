@@ -15,16 +15,23 @@
 
 ### Connector Quality Matrix
 
+To give users a better understanding of the overall quality of a connector, we have the following matrix and guidance on attributes that affect the quality rating.
 
-|         | SDK-Based | Usage Data   | Maintainer         | Repo Activity  | Ready to Use In Production |
-|---------|-----------|--------------|--------------------|----------------|----------------------------|
-| Gold    | Yes       | > 5 Projects | Meltano or Partner | High           | Yes                        |
-| Silver  | Possibly  | > 3 Projects | Community          | Medium on Repo | Yes, with caveats          |
-| Bronze  | No        | > 0 Projects | Community          | Low            | Possibly                   |
-| No Data | No        | Unkonwn      | Community          | Unknown        | Unknown                    |
+|         | SDK-Based | Usage Data    | Maintainer         | Repo Activity  |
+|---------|-----------|---------------|--------------------|----------------|
+| Gold    | Yes       | > 5 Projects  | Meltano or Partner | High           |
+| Silver  | Possibly  | >= 1 Projects | Community          | Medium on Repo |
+| Bronze  | No        | >= 1 Projects | Community          | Low            |
+| No Data | No        | Unkonwn       | Community          | Unknown        |
 
 <!-- Generated from https://www.tablesgenerator.com/markdown_tables -->
 
 For all connectors we may apply feedback we get from the community or our judgement to adjust the quality indicator of a connector.
 
-Please reach out to us to learn more about Platinum connectors.
+Please reach out to us to learn more about Platinum-level support for Gold connectors.
+
+**Are these connectors production ready?**
+
+Gold connectors are production ready. Silver connectors are very likely ready for production. Bronze connectors could be ready for production, but assessing them for your use case is recommended.
+
+One additional factor is what stage of development the connector is in. We recommend [semantic versioning](https://semver.org/) for connector development. If a connector is at v1.0.0 or greater, then it is definitely production-grade. For connectors between versions 0.1.0 and 1.0.0, they could be production ready and a number of users could be using them actively. But it is worth considering your own use case and whether it has the streams and features you need. If the connector is <0.1.0 then it still in development and is likely not ready for production.
