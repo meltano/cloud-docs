@@ -66,7 +66,7 @@ A job within Meltano is an instance of a Meltano operation that performed some c
 * run
 * test
 
-Each job has additional adjectives that give more information about what kind of job it is. 
+Each job has additional adjectives that give more information about what kind of job it is.
 
 ### On-demand, Unnamed Jobs
 
@@ -74,7 +74,7 @@ An unnamed job is one that is specified directly on the command line. If a user 
 
 ### On-demand, Named Jobs
 
-A named job is defined in the meltano.yml file either under the `jobs` key in the case of `meltano run` or via the `schedules` key in the case of `meltano elt`. 
+A named job is defined in the meltano.yml file either under the `jobs` key in the case of `meltano run` or via the `schedules` key in the case of `meltano elt`.
 
 On-demand, named jobs can be triggered via the following commands:
 
