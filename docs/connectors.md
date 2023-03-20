@@ -35,3 +35,7 @@ Please reach out to us to learn more about Platinum-level support for Gold conne
 Gold connectors are production ready. Silver connectors are very likely ready for production. Bronze connectors could be ready for production, but assessing them for your use case is recommended.
 
 One additional factor is what stage of development the connector is in. We recommend [semantic versioning](https://semver.org/) for connector development. If a connector is at v1.0.0 or greater, then it is definitely production-grade. For connectors between versions 0.1.0 and 1.0.0, they could be production ready and a number of users could be using them actively. But it is worth considering your own use case and whether it has the streams and features you need. If the connector is <0.1.0 then it still in development and is likely not ready for production.
+
+**Why is Silver the maximum rating for connectors not based on the Meltano SDK?**
+
+We find that many connectors not based on the SDK may not have the full feature set of SDK-based connectors. Even for connectors that have high usage, the fact that they are not based on the SDK means that it's much harder to validate that they conform to the full Singer specification. It also means they are harder to maintain and improve. They also miss out on improvements that are added regularly to the Meltano SDK.
