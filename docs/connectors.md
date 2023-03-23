@@ -37,3 +37,24 @@ One additional factor is what stage of development the connector is in. We recom
 **Why is Silver the maximum rating for connectors not based on the Meltano SDK?**
 
 Connectors that are not based on the Meltano SDK typically do not use all the features and performance optimizations available in the Singer specification and the SDK implementation thereof. Even if they have high usage, their quality and feature and data coverage are harder to asses, they will not benefit from future improvements to the Singer spec and SDK, and that they are significantly harder to maintain and contribute to.
+
+**What are the criteria for a connector to be considered an Official, Partner, or Community connector?**
+
+Please [reach out to us](https://meltano.com/partners/) for more information on how to become a Partner.
+
+**How is the repository responsiveness determined and what does “High”, “Medium”, and “Low” mean in this context?**
+
+We look at the recent activity on issues and pull requests on the repository to determine this. Typically low responsiveness means there hasn't been any activity for more than 6 months. High activity means there are responses within a week.
+
+**Can a connector’s quality rating change over time, and if so, how often are they updated?**
+
+Yes. We have automated checks to notify us of meaningful changes to the properties of a connector. Please [reach out to us](https://meltano.com/contact/) if you have a question or think a quality rating should change.
+
+**How can I contribute to improving a connector’s quality rating or help maintain it?**
+
+There are multiple ways to improve a connector's quality. Please [review this page](https://hub.meltano.com/tap-target-maintenance) to learn more about connector maintenance.
+
+
+**Can I request a connector to be built or improved if it doesn’t meet my needs?**
+
+Yes. Please [reach out to us](https://meltano.com/contact/) with your request.
