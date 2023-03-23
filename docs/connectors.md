@@ -18,7 +18,7 @@ To give users a better understanding of the overall quality of a connector, we h
 
 |         | SDK-Based | Usage Data    | Maintainer         | Repo Responsiveness  |
 |---------|-----------|---------------|--------------------|----------------|
-| Gold    | Yes       | > 5 Projects  | Meltano or Partner | High           |
+| Gold    | Yes       | > 5 Projects  | Official, Partner, or Community | High           |
 | Silver  | Possibly  | >= 1 Projects | Partner or Community          | Medium |
 | Bronze  | No        | >= 1 Projects | Community          | Low            |
 | No Data | No        | Unkonwn       | Community          | Unknown        |
