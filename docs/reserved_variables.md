@@ -7,6 +7,7 @@ There are specific environment variables that are reserved for certain use-cases
 `GIT_SSH_PRIVATE_KEY` is a reserved variable that should be set if you have private repository packages.
 
 > The following instruction and example is secrets encryption for Alpha which will be deprecated in Beta.
+> Current encryption instructions can be found in our [Encrypting Secrets guide](https://github.com/meltano/cloud-docs/blob/main/docs/encrypting_secrets.md#components-for-encryption).
 
 To encrypt, set the ssh private key env variable into your `.env` file as-is in the private key file with single quotes
 around them.
