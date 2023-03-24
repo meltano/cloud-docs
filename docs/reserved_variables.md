@@ -27,6 +27,6 @@ Then continue with encryption using the [kms-ext](https://github.com/meltano/kms
 
 ## Job or Schedule Run Notifications via Webhook
 
-`MELTANO_CLOUD_WEBHOOK_URL` can be set to receive notifications on success or fail of a job or schedule run.
+`MELTANO_CLOUD_WEBHOOK_URL` can be set to receive notifications on success and fail of a job or schedule run.
 
 Currently only one webhook url can be configured.
