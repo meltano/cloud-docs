@@ -7,14 +7,22 @@ This document covers information on encrypting secrets in your Meltano `secrets.
 
 ## Components for Encryption
 
-### Public Key
+### Encryption Method
+
+Use the `meltano cloud config env set <ENV_VAR>` cli command to set an environment variable secret.
+
+This will set secrets via the `.env` file at runtime for a job or schedule.
+
+### Alpha Phase Encryption Method
+> This method will be deprecated in Beta
+#### Public Key
 
 During the on-boarding process, Meltano will provide you with the Public Key of your public/private encryption key pair.
 For details on the encryption algorithms and other security related information, refer to https://github.com/meltano/cloud-docs/blob/main/docs/security.md.
 
 Save your public key somewhere for use during encryption.
 
-### Utility kms-ext
+#### Utility kms-ext
 
 We have a utility extension for encrypting your secrets:
 https://github.com/meltano/kms-ext
@@ -32,7 +40,7 @@ Once installed, you should be able to run `kms --help` to see usage, options, an
 > If you need to change or confirm your values, you will need to re-encrypt your .env file.
 > Each time encryption is performed, all contents in the .env file will update.
 
-### Example
+#### Example
 
 For this example, the following statements are true:
 

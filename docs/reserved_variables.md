@@ -24,7 +24,7 @@ SOME_OTHER_SECRET=1234asdf
 
 Then continue with encryption using the [kms-ext](https://github.com/meltano/kms-ext) utility.
 
-## Job or Schedule run notifications via webhook
+## Job or Schedule Run Notifications via Webhook
 
 `MELTANO_CLOUD_WEBHOOK_URL` can be set to receive notifications on success or fail of a job or schedule run.
 
